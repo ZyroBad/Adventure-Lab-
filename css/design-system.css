@@ -1,0 +1,8 @@
+:root {
+    --color-primary: #8b0000;      /* Rojo oscuro */
+    --color-secondary: #daa520;     /* Dorado */
+    --color-text: #f0f0f0;          /* Blanco hueso */
+    --color-text-dim: #a0a0a0;      /* Gris claro */
+    --color-background: #1a1a1a;    /* Casi negro */
+    --color-card: #2d2d2d;          /* Gris oscuro */
+}
