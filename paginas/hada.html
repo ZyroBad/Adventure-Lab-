@@ -1,28 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/styles.css">
-    <title>El Hada</title>
-</head>
-<body>
-    <main>
-        <div class="card">
-            <h1>HADA DEL BOSQUE</h1>
-            
-            <p>El hada <strong>brilla con luz propia</strong>. <b>Polvo mágico</b> flota a su alrededor. <small>Puedes ver el futuro</small> en sus ojos.</p>
-            
-            <img src="../assets/imagenes/hada.jpg" alt="Hada brillante con alas de colores">
-            
-            <h2>¿Qué haces?</h2>
-            
-            <a href="final-neutro.html">Aceptar el hechizo y ver tu destino</a>
-            <a href="bosque.html">Rechazar su ayuda y volver al bosque</a>
-        </div>
-    </main>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cripta Perdida - El Hada</title>
     
-    <footer>
-        <p>Encuentro con el Hada</p>
+    <link rel="stylesheet" href="../css/story-theme.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layouts.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="decision-page">
+    <div class="main-grid">
+        <div class="card story-content">
+            <div class="card__header">
+                <h1> HADA DEL BOSQUE</h1>
+            </div>
+            
+            <div class="card__body">
+                <p class="story-text">Sigues al hada mientras revolotea entre los árboles. Te lleva a un claro oculto donde un <strong>círculo de hongos brillantes</strong> emite una luz púrpura. El hada se posa en el centro y te hace señas para que entres.</p>
+                
+                <p>"Este círculo te mostrará <b>tu destino</b>", dice con voz melodiosa. "Pero debo advertirte: ver el futuro tiene un precio. Podrías no gustar lo que ves."</p>
+                
+                <p><small>El hada extiende su mano, ofreciéndote polvo brillante.</small></p>
+                
+                <div class="card__image">
+                    <img src="../assets/imagenes/hada.jpg" alt="Hada brillante en un círculo de hongos">
+                </div>
+            </div>
+            
+            <div class="card__footer">
+                <h2>¿Qué haces?</h2>
+                
+                <div class="actions">
+                    <a href="final-neutro.html" class="choice-button"> Entrar al círculo y ver tu destino</a>
+                    <a href="bosque.html" class="choice-button choice-button--secondary"> Rechazar y volver al bosque</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>El Hada de la Selva</p>
     </footer>
 </body>
 </html>
