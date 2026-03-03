@@ -2,30 +2,46 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>El Bosque Sagrado</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-    <main>
-        <div class="card">
-            <h1> BOSQUE SAGRADO</h1>
-            
-            <p>Decides rodear la cripta y adentrarte en el bosque. La vegetación es tan densa que apenas deja pasar la luz del sol. Escuchas el canto de aves exóticas y, de repente, un <strong>rugido profundo</strong> retumba entre los árboles.</p>
-            
-            <p>Caminas con cuidado y encuentras un claro donde yace un <b>dragón herido</b>, de escamas color obsidiana y ojos dorados. A su lado, una pequeña criatura luminosa revolotea: es un <strong>hada de la selva</strong>, que te mira con curiosidad.</p>
-            
-            <p><small>El hada susurra: "El guardián de la cripta está herido. Solo uno de ustedes puede sobrevivir esta noche."</small></p>
-            
-            <img src="../assets/imagenes/bosque.jpg" alt="Claro del bosque con un dragón y un hada">
-            
-            <h2>¿Qué haces?</h2>
-            
-            <a href="dragon.html">🐉 Acercarte al dragón y curar sus heridas</a>
-            <a href="hada.html">🧚 Seguir al hada, confiando en su magia</a>
-        </div>
-    </main>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cripta Perdida - Bosque Sagrado</title>
     
-    <footer>
+    <link rel="stylesheet" href="../css/story-theme.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layouts.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="decision-page">
+    <div class="main-grid">
+        <div class="card story-content">
+            <div class="card__header">
+                <h1>🌳 BOSQUE SAGRADO</h1>
+            </div>
+            
+            <div class="card__body">
+                <p class="story-text">Decides rodear la cripta y adentrarte en el bosque. La vegetación es tan densa que apenas deja pasar la luz del sol. Escuchas el canto de aves exóticas y, de repente, un <strong>rugido profundo</strong> retumba entre los árboles.</p>
+                
+                <p>Caminas con cuidado y encuentras un claro donde yace un <b>dragón herido</b>, de escamas color obsidiana y ojos dorados. A su lado, una pequeña criatura luminosa revolotea: es un <strong>hada de la selva</strong>, que te mira con curiosidad.</p>
+                
+                <p><small>El hada susurra: "El guardián de la cripta está herido. Solo uno de ustedes puede sobrevivir esta noche."</small></p>
+                
+                <div class="card__image">
+                    <img src="../assets/imagenes/bosque.jpg" alt="Claro del bosque con un dragón y un hada">
+                </div>
+            </div>
+            
+            <div class="card__footer">
+                <h2>¿Qué haces?</h2>
+                
+                <div class="actions">
+                    <a href="dragon.html" class="choice-button">🐉 Acercarte al dragón</a>
+                    <a href="hada.html" class="choice-button choice-button--secondary">🧚 Seguir al hada</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
         <p>Bosque Sagrado · El guardián y la criatura</p>
     </footer>
 </body>

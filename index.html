@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Cripta Perdida - Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <main>
-        <div class="card">
-            <h1>LA CRIPTA PERDIDA</h1>
-            
-            <p>Eres <strong>un arqueólogo</strong> que explora la selva amazónica. Encuentras una <b>cripta antigua</b> cubierta de musgo. <small>Nadie ha entrado en mil años</small>.</p>
-            
-            <img src="assets/imagenes/cripta.jpg" alt="Entrada de piedra a una cripta">
-            
-            <h2>¿Qué haces?</h2>
-            
-            <a href="paginas/bosque.html">Explorar el bosque alrededor</a>
-            <a href="paginas/cueva.html">Entrar directamente a la cripta</a>
-        </div>
-    </main>
     
-    <footer>
-        <p>Laboratorio 2 - HTML y NGINX - ZyroBad</p>
+    <link rel="stylesheet" href="css/story-theme.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="start-page">
+    <div class="main-grid">
+        <div class="card story-content">
+            <div class="card__header">
+                <h1>LA CRIPTA PERDIDA</h1>
+            </div>
+            
+            <div class="card__body">
+                <p class="story-text"><strong>Año 1927.</strong> El reconocido arqueólogo <b>Sebastián Lemus</b> ha dedicado los últimos cinco años de su vida a buscar la legendaria <strong>Cripta de Ixbalanqué</strong>, un lugar mencionado en los antiguos códices mayas como "el umbral entre el mundo de los vivos y los muertos".</p>
+                
+                <p>Después de meses de expedición por la selva guatemalteca, guiado por historias locales y mapas coloniales, finalmente te encuentras frente a una imponente estructura de piedra caliza, parcialmente cubierta de musgo y raíces centenarias. El aire es denso, húmedo, y se escucha el eco lejano de gotas de agua filtrándose entre las rocas.</p>
+                
+                <p><small>Según las inscripciones en la entrada, "quien entre sin respeto quedará atrapado por siempre".</small></p>
+                
+                <div class="card__image">
+                    <img src="assets/imagenes/cripta.jpg" alt="Entrada de piedra a una cripta maya cubierta de musgo">
+                </div>
+            </div>
+            
+            <div class="card__footer">
+                <h2>¿Cuál es tu primera decisión?</h2>
+                
+                <div class="actions">
+                    <a href="pages/bosque.html" class="choice-button">🌿 Explorar el bosque alrededor</a>
+                    <a href="pages/cueva.html" class="choice-button choice-button--secondary">🪦 Entrar directamente a la cripta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>La Cripta Perdida · 1927 · Expedición UVG</p>
     </footer>
 </body>
 </html>

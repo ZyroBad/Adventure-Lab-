@@ -1,28 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/styles.css">
-    <title>El Dragón</title>
-</head>
-<body>
-    <main>
-        <div class="card">
-            <h1>DRAGÓN DE FUEGO</h1>
-            
-            <p>El dragón <strong>escupe llamas</strong> y te mira fijamente. <b>Su escama brilla</b> con el reflejo del fuego. Es <small>enorme y poderoso</small>, pero parece herido.</p>
-            
-            <img src="../assets/imagenes/dragon.jpg" alt="Dragón rojo con escamas brillantes">
-            
-            <h2>¿Qué haces?</h2>
-            
-            <a href="final-bueno.html">Ayudar al dragón curando su herida</a>
-            <a href="final-malo.html">Atacarlo con tu espada</a>
-        </div>
-    </main>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cripta Perdida - El Dragón</title>
     
-    <footer>
-        <p>Enfrentamiento con el Dragón</p>
+    <link rel="stylesheet" href="../css/story-theme.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layouts.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="decision-page">
+    <div class="main-grid">
+        <div class="card story-content">
+            <div class="card__header">
+                <h1>🐉 DRAGÓN DE FUEGO</h1>
+            </div>
+            
+            <div class="card__body">
+                <p class="story-text">Te acercas lentamente al dragón. Sus ojos dorados te observan con inteligencia. Notas una flecha clavada en su costado, de la cual brota una sangre negruzca. El dragón <strong>gruñe débilmente</strong>, pero no te ataca.</p>
+                
+                <p>Recuerdas que llevas un <b>antídoto herbal</b> en tu mochila, preparado por los chamanes locales. Podrías curarlo... o podrías aprovechar su debilidad para atacar y obtener sus escamas, que valen una fortuna.</p>
+                
+                <p><small>El dragón cierra los ojos, entregándose a tu decisión.</small></p>
+                
+                <div class="card__image">
+                    <img src="../assets/imagenes/dragon.jpg" alt="Dragón herido de escamas oscuras">
+                </div>
+            </div>
+            
+            <div class="card__footer">
+                <h2>¿Qué haces?</h2>
+                
+                <div class="actions">
+                    <a href="final-bueno.html" class="choice-button">🌿 Curar al dragón con el antídoto</a>
+                    <a href="final-malo.html" class="choice-button choice-button--secondary">⚔️ Atacarlo y tomar sus escamas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>Encuentro con el Dragón</p>
     </footer>
 </body>
 </html>
