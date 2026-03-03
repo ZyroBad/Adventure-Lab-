@@ -1,28 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/styles.css">
-    <title>El Tesoro</title>
-</head>
-<body>
-    <main>
-        <div class="card">
-            <h1>TESORO ANCESTRAL</h1>
-            
-            <p>Encuentras un <strong>cofre dorado</strong> lleno de <b>joyas incas</b>. Hay <small>monedas de oro</small> por todas partes.</p>
-            
-            <img src="../assets/imagenes/tesoro.jpg" alt="Cofre con monedas y joyas">
-            
-            <h2>¿Qué haces?</h2>
-            
-            <a href="final-bueno.html">Donar el tesoro a un museo</a>
-            <a href="final-malo.html">Quedarte con todo y huir</a>
-        </div>
-    </main>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cripta Perdida - El Tesoro</title>
     
-    <footer>
-        <p>Tesoro Ancestral</p>
+    <link rel="stylesheet" href="../css/story-theme.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layouts.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="decision-page">
+    <div class="main-grid">
+        <div class="card story-content">
+            <div class="card__header">
+                <h1> TESORO ANCESTRAL</h1>
+            </div>
+            
+            <div class="card__body">
+                <p class="story-text">Te acercas al brillo dorado y descubres un <strong>cofre abierto</strong> lleno de joyas, monedas de oro y una máscara ceremonial maya. Es el tesoro del rey Ixbalanqué, perdido por siglos.</p>
+                
+                <p>Pero al tocarlo, sientes una <b>presencia oscura</b> a tus espaldas. Una voz susurra: "Ese oro no es para los vivos... es la ofrenda para los dioses del inframundo."</p>
+                
+                <p><small>Las paredes comienzan a temblar.</small></p>
+                
+                <div class="card__image">
+                    <img src="../assets/imagenes/tesoro.jpg" alt="Cofre con monedas de oro y joyas">
+                </div>
+            </div>
+            
+            <div class="card__footer">
+                <h2>¿Qué haces?</h2>
+                
+                <div class="actions">
+                    <a href="final-bueno.html" class="choice-button"> Tomar solo una pieza para el museo</a>
+                    <a href="final-malo.html" class="choice-button choice-button--critical"> Tomar todo y huir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <p>Tesoro de Ixbalanqué</p>
     </footer>
 </body>
 </html>

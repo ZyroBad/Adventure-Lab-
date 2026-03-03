@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/styles.css">
-    <title>Murciélagos</title>
-</head>
-<body>
-    <main>
-        <div class="card">
-            <h1>MURCIÉLAGOS ENFURECIDOS</h1>
-            
-            <p>Los murciélagos <strong>atacan en masa</strong>. <b>No ves nada</b> y corres sin dirección. <small>Logras escapar</small> pero estás herido.</p>
-            
-            <img src="../assets/imagenes/murcielagos.jpg" alt="Murciélagos volando">
-            
-            <h2>¿Lograste escapar?</h2>
-            
-            <a href="cueva.html">Volver a la cueva</a>
-            <a href="final-neutro.html">Salir herido pero vivo</a>
-        </div>
-    </main>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cripta Perdida - Murciélagos</title>
     
-    <footer>
+    <link rel="stylesheet" href="../css/story-theme.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layouts.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="decision-page">
+    <div class="main-grid">
+        <div class="card story-content">
+            <div class="card__header">
+                <h1> MURCIÉLAGOS ENFURECIDOS</h1>
+            </div>
+            
+            <div class="card__body">
+                <p class="story-text">Decides investigar a los murciélagos. Al acercarte, miles de ojos rojos se abren simultáneamente. Los <strong>murciélagos</strong> despiertan y comienzan a volar enloquecidos, chocando contra las paredes y contra ti.</p>
+                
+                <p>Logras cubrirte la cara y corres sin dirección. Escuchas el aleteo furioso y los chillidos. De repente, encuentras una <b>grieta en la pared</b> por la que apenas cabe una persona. Podrías esconderte ahí o seguir corriendo a ciegas.</p>
+                
+                <p><small>Los murciélagos se acercan...</small></p>
+                
+                <div class="card__image">
+                    <img src="../assets/imagenes/murcielagos.jpg" alt="Enjambre de murciélagos en una cueva">
+                </div>
+            </div>
+            
+            <div class="card__footer">
+                <h2>¿Qué haces?</h2>
+                
+                <div class="actions">
+                    <a href="final-neutro.html" class="choice-button"> Esconderte en la grieta</a>
+                    <a href="cueva.html" class="choice-button choice-button--secondary"> Seguir corriendo a ciegas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
         <p>Ataque de Murciélagos</p>
     </footer>
 </body>
