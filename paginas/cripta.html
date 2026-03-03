@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/styles.css">
-    <title>La Cripta Interior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cripta Perdida - Interior de la Cripta</title>
+    
+    <link rel="stylesheet" href="../css/story-theme.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layouts.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
 </head>
-<body>
-    <h1>LA CRIPTA INTERIOR</h1>
+<body class="decision-page">
+    <div class="main-grid">
+        <div class="card story-content">
+            <div class="card__header">
+                <h1> INTERIOR DE LA CRIPTA</h1>
+            </div>
+            
+            <div class="card__body">
+                <p class="story-text">Logras abrir la puerta de piedra y entras a la cripta. El aire es frío y seco. Las paredes están cubiertas de <strong>jeroglíficos mayas</strong> que narran la vida del rey Ixbalanqué y su descenso al inframundo.</p>
+                
+                <p>Llegas a una cámara con tres pasillos: uno decorado con <b>plumas de quetzal</b>, otro con <b>cuchillos de obsidiana</b>, y un tercero con <b>semillas de cacao</b>. Cada uno representa una ofrenda diferente a los dioses.</p>
+                
+                <p><small>Una inscripción advierte: "Elige con sabiduría, o serás una ofrenda más".</small></p>
+                
+                <div class="card__image">
+                    <img src="../assets/imagenes/cripta_interior.jpg" alt="Pasillos de una cripta maya">
+                </div>
+            </div>
+            
+            <div class="card__footer">
+                <h2>¿Qué pasillo tomas?</h2>
+                
+                <div class="actions">
+                    <a href="final-bueno.html" class="choice-button"> Pasillo de las plumas</a>
+                    <a href="final-neutro.html" class="choice-button"> Pasillo de los cuchillos</a>
+                    <a href="final-malo.html" class="choice-button choice-button--critical"> Pasillo del cacao</a>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <p>Logras <strong>entrar a la cripta</strong>. Ves <b>sarcófagos antiguos</b> y <small>inscripciones misteriosas</small> en las paredes.</p>
-    
-    <img src="../assets/imagenes/cripta_interior.jpg" alt="Interior de la cripta con sarcófagos">
-    
-    <h2>¿Qué haces?</h2>
-    
-    <a href="tesoro.html">Abrir un sarcófago</a>
-    <br>
-    <a href="murcielago.html">Explorar un pasillo oscuro</a>
-    
-    <footer>
-        <p>Cripta Interior - Ten cuidado</p>
+    <footer class="site-footer">
+        <p>Interior de la Cripta</p>
     </footer>
 </body>
 </html>
