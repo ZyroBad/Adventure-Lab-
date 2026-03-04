@@ -1,0 +1,73 @@
+@import url('story-theme.css');
+
+/* Layout principal con Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    max-width: 800px;
+    margin: var(--spacing-lg) auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Grid para decisiones múltiples */
+.decisions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+/* Clases de utilidad para layout */
+.story-content {
+    width: 100%;
+}
+
+.story-text {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+/* Layout responsivo */
+@media (max-width: 600px) {
+    .main-grid {
+        margin: var(--spacing-md) auto;
+    }
+    
+    .card {
+        padding: var(--spacing-md);
+    }
+    
+    .decisions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .choice-button {
+        width: 100%;
+    }
+}
+
+/* Estados de página usando clases en body */
+.start-page {
+    background-color: var(--bg-inicio);
+}
+
+.start-page .card {
+    border-color: var(--color-secondary);
+}
+
+.decision-page {
+    background-color: var(--bg-decision);
+}
+
+.good-ending-page {
+    background-color: var(--bg-final-positivo);
+}
+
+.neutral-ending-page {
+    background-color: var(--bg-final-neutral);
+}
+
+.bad-ending-page {
+    background-color: var(--bg-final-negativo);
+}

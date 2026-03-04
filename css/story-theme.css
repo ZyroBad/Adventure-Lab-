@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    /* Paleta de colores semántica */
+    --color-primary: #8b0000;        /* Rojo oscuro - peligro/acción */
+    --color-secondary: #daa520;       /* Dorado - riqueza/magia/tesoro */
+    --color-accent: #4a2c2c;          /* Marrón rojizo - tierra/cripta */
+    
+    /* Estados de la narrativa */
+    --bg-inicio: #1a3a1a;             /* Verde oscuro - selva (inicio) */
+    --bg-decision: #2d2d4d;           /* Azul oscuro - misterio (decisiones) */
+    --bg-final-positivo: #2d4d2d;      /* Verde - éxito (final bueno) */
+    --bg-final-negativo: #4d2d2d;      /* Rojo oscuro - peligro (final malo) */
+    --bg-final-neutral: #4d4d4d;       /* Gris - neutral (final neutro) */
+    
+    /* Colores de texto */
+    --color-text-light: #f0e6d2;      /* Texto principal (hueso antiguo) */
+    --color-text-dim: #a0a0a0;        /* Texto secundario */
+    --color-text-inverse: #1a1a1a;    /* Texto sobre fondos claros */
+    
+    /* Tipografía */
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Crimson Text', serif;
+    --font-interactive: 'Montserrat', sans-serif;
+    
+    /* Espaciado consistente */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+    
+    /* Bordes */
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --border-radius-circle: 50%;
+    
+    /* Sombras */
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    /* Animaciones */
+    --transition-fast: 200ms ease-in-out;
+    --transition-normal: 400ms ease-in-out;
+    --transition-slow: 600ms ease-in-out;
+}

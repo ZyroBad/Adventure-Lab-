@@ -1,0 +1,132 @@
+@import url('story-theme.css');
+
+/* Botones de elección - exactamente como el template */
+.choice-button {
+    /* Estado base */
+    position: relative;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-secondary)
+    );
+    border: 2px solid var(--color-accent);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-family: var(--font-interactive);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text-light);
+    display: inline-block;
+    text-align: center;
+    min-width: 200px;
+    
+    /* Transiciones fluidas */
+    transition: all var(--transition-normal);
+    
+    /* Efectos de profundidad */
+    box-shadow: var(--shadow-sm);
+}
+
+/* Decorador con pseudoelemento */
+.choice-button::before {
+    content: "▶";
+    margin-right: var(--spacing-xs);
+    transition: transform var(--transition-fast);
+    display: inline-block;
+}
+
+/* Estado hover */
+.choice-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.choice-button:hover::before {
+    transform: translateX(4px);
+}
+
+/* Estado active */
+.choice-button:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Estado focus para accesibilidad */
+.choice-button:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 3px;
+}
+
+/* Botón secundario (estilo alternativo) */
+.choice-button--secondary {
+    background: transparent;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.choice-button--secondary:hover {
+    background: var(--color-secondary);
+    color: var(--color-text-inverse);
+}
+
+/* Estados adicionales - para finales críticos */
+.choice-button--critical {
+    border-color: var(--color-primary);
+    animation: pulse 2s infinite;
+}
+
+/* Contenedor de botones */
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+/* Tarjetas */
+.card {
+    background-color: var(--color-bg-card);
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoración de tarjeta con pseudoelemento */
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+/* Imágenes dentro de tarjetas */
+.card__image {
+    border: 3px solid var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    margin: var(--spacing-md) 0;
+    transition: transform var(--transition-normal);
+}
+
+.card__image:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: var(--spacing-md);
+    background-color: var(--color-bg-card);
+    border-top: 2px solid var(--color-secondary);
+    color: var(--color-text-dim);
+    margin-top: auto;
+    font-family: var(--font-interactive);
+}
